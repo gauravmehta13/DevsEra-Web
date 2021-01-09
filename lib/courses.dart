@@ -36,7 +36,7 @@ class FreeCourses extends StatelessWidget {
                     child: Column(
                       children: [
                         Text(
-                          'ML',
+                          'Machine Learning',
                           style: TextStyle(
                               fontWeight: FontWeight.w800, fontSize: 20),
                         ),
@@ -62,6 +62,10 @@ class FreeCourses extends StatelessWidget {
                               fontSize: 20,
                               color: Colors.blue),
                         ),
+                        FlatButton(
+                            onPressed: () {},
+                            child: Container(
+                                color: Colors.green, child: Text('Know More')))
                       ],
                     ),
                   ),
