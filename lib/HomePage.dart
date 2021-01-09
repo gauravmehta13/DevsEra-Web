@@ -12,38 +12,48 @@ class HomePage extends StatelessWidget {
             color: const Color(0xff2821b5),
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.center,
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 SizedBox(
-                  width: 200.0,
-                  height: 200.0,
                   child:
                       Image.asset('asset/logo.png'), // Your image widget here
+                ),
+                Spacer(
+                  flex: 2,
                 ),
                 Text(
                   "Why Us?",
                   style: TextStyle(
-                      fontWeight: FontWeight.w600, color: Colors.black),
+                    fontWeight: FontWeight.w600,
+                  ),
                 ),
+                Spacer(),
                 Text(
                   "Timeline",
                   style: TextStyle(
-                      fontWeight: FontWeight.w600, color: Colors.black),
+                    fontWeight: FontWeight.w600,
+                  ),
                 ),
+                Spacer(),
                 Text(
                   "Free Courses",
                   style: TextStyle(
-                      fontWeight: FontWeight.w600, color: Colors.black),
+                    fontWeight: FontWeight.w600,
+                  ),
                 ),
+                Spacer(),
                 Text(
                   "Join Us",
                   style: TextStyle(
-                      fontWeight: FontWeight.w600, color: Colors.black),
-                )
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+                Spacer(),
               ],
             ),
           )),
-      body: Container(),
+      body: SingleChildScrollView(
+        child: Container(),
+      ),
     );
   }
 }
