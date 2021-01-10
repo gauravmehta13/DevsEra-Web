@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'courses.dart';
+import 'Courses/Courses.dart';
 
 class topbar extends StatelessWidget {
   @override
@@ -44,7 +43,7 @@ class topbar extends StatelessWidget {
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => FreeCourses()),
+                MaterialPageRoute(builder: (context) => Courses()),
               );
             },
             child: Text(
