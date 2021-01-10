@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'Courses/Courses.dart';
 
-class topbar extends StatelessWidget {
+class Topbar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(

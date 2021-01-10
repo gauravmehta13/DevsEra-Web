@@ -385,7 +385,7 @@ class DesktopCourses extends StatelessWidget {
             ],
           ),
         ),
-        topbar(),
+        Topbar(),
       ],
     ));
   }
