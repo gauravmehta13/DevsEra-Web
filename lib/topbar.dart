@@ -6,12 +6,13 @@ class topbar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 100,
+      height: 75,
       color: const Color(0xff2821b5),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          SizedBox(
+          FlatButton(
+            onPressed: () {},
             child: Image.asset('asset/logo.png'),
           ),
           Spacer(

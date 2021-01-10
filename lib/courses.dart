@@ -12,7 +12,7 @@ class FreeCourses extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               SizedBox(
-                height: 100,
+                height: 125,
               ),
               Text('Individual Courses',
                   style: TextStyle(fontWeight: FontWeight.w600, fontSize: 20)),
@@ -24,7 +24,7 @@ class FreeCourses extends StatelessWidget {
                 style: TextStyle(fontWeight: FontWeight.w400),
               ),
               SizedBox(
-                height: 100,
+                height: 50,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -65,7 +65,9 @@ class FreeCourses extends StatelessWidget {
                         FlatButton(
                             onPressed: () {},
                             child: Container(
-                                color: Colors.green, child: Text('Know More')))
+                                padding: EdgeInsets.all(20),
+                                color: Colors.green,
+                                child: Text('Know More')))
                       ],
                     ),
                   ),
