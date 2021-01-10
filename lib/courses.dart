@@ -1,5 +1,6 @@
 import 'package:devsera/topbar.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class FreeCourses extends StatelessWidget {
   @override
@@ -17,7 +18,7 @@ class FreeCourses extends StatelessWidget {
               Text('Individual Courses',
                   style: TextStyle(fontWeight: FontWeight.w600, fontSize: 20)),
               SizedBox(
-                height: 25,
+                height: 15,
               ),
               Text(
                 'Choose the one which suits you best.',
@@ -40,8 +41,9 @@ class FreeCourses extends StatelessWidget {
                           style: TextStyle(
                               fontWeight: FontWeight.w800, fontSize: 20),
                         ),
+                        Divider(color: Colors.blue),
                         SizedBox(
-                          height: 20,
+                          height: 10,
                         ),
                         Text(
                           'Understanding data, ML techniques, Model Tuning, XGboost.',
@@ -51,23 +53,34 @@ class FreeCourses extends StatelessWidget {
                           height: 20,
                         ),
                         Text(
-                          'Community support: Yes \n Duration: 4 Weeks \n Projects: 5',
+                          'Community support: Yes \n\n Duration: 4 Weeks \n\n Projects: 5',
                           style: TextStyle(
                               fontWeight: FontWeight.w600, fontSize: 15),
+                        ),
+                        SizedBox(
+                          height: 20,
                         ),
                         Text(
                           'Free',
                           style: TextStyle(
                               fontWeight: FontWeight.w800,
-                              fontSize: 20,
+                              fontSize: 25,
                               color: Colors.blue),
+                        ),
+                        SizedBox(
+                          height: 20,
                         ),
                         FlatButton(
                             onPressed: () {},
+                            shape: new RoundedRectangleBorder(
+                                borderRadius: new BorderRadius.circular(5)),
                             child: Container(
-                                padding: EdgeInsets.all(20),
+                                padding: EdgeInsets.fromLTRB(50, 10, 50, 10),
                                 color: Colors.green,
-                                child: Text('Know More')))
+                                child: Text(
+                                  'Know More',
+                                  style: TextStyle(color: Colors.white),
+                                )))
                       ],
                     ),
                   ),

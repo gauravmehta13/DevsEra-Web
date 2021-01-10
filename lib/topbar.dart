@@ -6,6 +6,7 @@ class topbar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      padding: EdgeInsets.all(10),
       height: 75,
       color: const Color(0xff2821b5),
       child: Row(
@@ -13,7 +14,10 @@ class topbar extends StatelessWidget {
         children: [
           FlatButton(
             onPressed: () {},
-            child: Image.asset('asset/logo.png'),
+            child: Image.asset(
+              'asset/logoanimated.gif',
+              fit: BoxFit.contain,
+            ),
           ),
           Spacer(
             flex: 2,
