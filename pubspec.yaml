@@ -13,6 +13,7 @@ dependencies:
   cupertino_icons: ^1.0.1
   google_fonts:
   websafe_svg:
+  font_awesome_flutter:
 
 dev_dependencies:
   flutter_test:
@@ -28,3 +29,4 @@ flutter:
     - asset/logoanimated.gif
     - asset/bg1.jpg
     - asset/bg2.jpg
+    - asset/DE.png

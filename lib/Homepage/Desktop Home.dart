@@ -1,5 +1,7 @@
 import 'package:devsera/topbar.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'dart:html' as html;
 
 class DesktopHomePage extends StatelessWidget {
   @override
@@ -18,7 +20,7 @@ class DesktopHomePage extends StatelessWidget {
                         colorFilter: new ColorFilter.mode(
                             Colors.black.withOpacity(0.5), BlendMode.dstATop),
                         image: AssetImage(
-                          'asset/bg2.jpg',
+                          'asset/DE.png',
                         ),
                         fit: BoxFit.fitWidth)),
                 child: Column(
@@ -28,22 +30,22 @@ class DesktopHomePage extends StatelessWidget {
                       height: 130,
                     ),
                     Text(
-                      'DevsEra',
+                      'Your Journey\nto Success',
                       style: TextStyle(
-                        fontSize: 75,
+                        fontSize: 80,
                         fontWeight: FontWeight.w600,
                       ),
+                      textAlign: TextAlign.center,
                     ),
                     SizedBox(
                       height: 25,
                     ),
                     Text(
-                      'Empowering the Developers of this Era',
+                      'Build skills with courses, certificates, Internships and Trainings that are globally recognized.',
                       style: TextStyle(
                         fontWeight: FontWeight.w500,
                         fontSize: 25,
                       ),
-                      textAlign: TextAlign.center,
                     ),
                     SizedBox(
                       height: 30,
@@ -51,7 +53,7 @@ class DesktopHomePage extends StatelessWidget {
                     RaisedButton(
                       color: const Color(0xff2821b5),
                       textColor: Colors.white,
-                      padding: EdgeInsets.all(20),
+                      padding: EdgeInsets.fromLTRB(30, 20, 30, 20),
                       onPressed: () {},
                       shape: new RoundedRectangleBorder(
                           borderRadius: new BorderRadius.circular(1)),
@@ -63,7 +65,6 @@ class DesktopHomePage extends StatelessWidget {
                             fontSize: 15,
                             fontWeight: FontWeight.w500,
                           ),
-                          textAlign: TextAlign.center,
                         ),
                       ),
                     )
@@ -94,10 +95,87 @@ class DesktopHomePage extends StatelessWidget {
                       ),
                     ),
                     Container(
-                        width: MediaQuery.of(context).size.width / 2,
-                        child: Row(
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                        ))
+                      width: MediaQuery.of(context).size.width / 2,
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: <Widget>[
+                          IconButton(
+                            icon: FaIcon(
+                              FontAwesomeIcons.instagram,
+                              color: Color(0xFFDD2a7b),
+                            ),
+                            onPressed: () {
+                              html.window.open(
+                                  'https://www.instagram.com/gauravmehta.13/',
+                                  'new tab');
+                            },
+                          ),
+                          IconButton(
+                            icon: FaIcon(
+                              FontAwesomeIcons.twitter,
+                              color: Color(0xFF00acee),
+                            ),
+                            onPressed: () {
+                              html.window.open(
+                                  'https://twitter.com/gauravmehta_',
+                                  'new tab');
+                            },
+                          ),
+                          IconButton(
+                            icon: Icon(
+                              Icons.mail_outline,
+                            ),
+                            color: Color(0xFFD44638),
+                            onPressed: () {
+                              html.window.open(
+                                  'mailto:gauravmehta@outlook.in', 'new tab');
+                            },
+                          ),
+                          IconButton(
+                            icon: FaIcon(
+                              FontAwesomeIcons.whatsapp,
+                              color: Colors.green,
+                            ),
+                            onPressed: () {
+                              html.window.open(
+                                  'https://wa.me/+917073142922', 'new tab');
+                            },
+                          ),
+                          IconButton(
+                            icon: FaIcon(
+                              FontAwesomeIcons.linkedin,
+                              color: Color(0xFF0072b1),
+                            ),
+                            onPressed: () {
+                              html.window.open(
+                                  'https://www.linkedin.com/in/gauravmehta13/',
+                                  'new tab');
+                            },
+                          ),
+                          IconButton(
+                            icon: FaIcon(
+                              FontAwesomeIcons.github,
+                              color: Colors.white60,
+                            ),
+                            onPressed: () {
+                              html.window.open(
+                                  'https://github.com/gauravmehta13',
+                                  'new tab');
+                            },
+                          ),
+                          IconButton(
+                            icon: FaIcon(
+                              FontAwesomeIcons.telegram,
+                              color: Color(0xFF0088cc),
+                            ),
+                            onPressed: () {
+                              html.window.open(
+                                  'https://t.me/gauravmehta13', 'new tab');
+                            },
+                          ),
+                        ],
+                      ),
+                    )
                   ],
                 ),
               )

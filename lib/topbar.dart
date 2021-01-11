@@ -1,3 +1,4 @@
+import 'package:devsera/Homepage/Homepage.dart';
 import 'package:flutter/material.dart';
 import 'Courses/Courses.dart';
 
@@ -12,7 +13,12 @@ class Topbar extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           FlatButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => HomePage()),
+              );
+            },
             child: Image.asset(
               'asset/logoanimated.gif',
               fit: BoxFit.contain,
