@@ -18,7 +18,7 @@ class DesktopHomePage extends StatelessWidget {
                 decoration: BoxDecoration(
                     image: DecorationImage(
                         colorFilter: new ColorFilter.mode(
-                            Colors.black.withOpacity(0.5), BlendMode.dstATop),
+                            Colors.black.withOpacity(0.3), BlendMode.dstATop),
                         image: AssetImage(
                           'asset/DE.png',
                         ),
