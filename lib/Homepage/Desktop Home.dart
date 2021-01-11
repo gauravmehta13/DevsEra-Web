@@ -20,7 +20,7 @@ class DesktopHomePage extends StatelessWidget {
                         colorFilter: new ColorFilter.mode(
                             Colors.black.withOpacity(0.3), BlendMode.dstATop),
                         image: AssetImage(
-                          'asset/DE.png',
+                          'asset/bg3.jpg',
                         ),
                         fit: BoxFit.fitWidth)),
                 child: Column(
