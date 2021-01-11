@@ -1,4 +1,5 @@
 import 'package:devsera/Homepage/Homepage.dart';
+import 'package:devsera/Join%20Us/Join%20Us.dart';
 import 'package:flutter/material.dart';
 import 'Courses/Courses.dart';
 
@@ -60,7 +61,12 @@ class Topbar extends StatelessWidget {
           ),
           Spacer(),
           FlatButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => JoinUs()),
+              );
+            },
             child: Text(
               "Join Us",
               style:
