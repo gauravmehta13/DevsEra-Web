@@ -382,6 +382,10 @@ class DesktopCourses extends StatelessWidget {
               SizedBox(
                 height: 50,
               ),
+              Container(
+                height: MediaQuery.of(context).size.height / 3,
+                color: Color(0xFF2e2e2f),
+              )
             ],
           ),
         ),

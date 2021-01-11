@@ -27,20 +27,23 @@ class DesktopJoin extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              RaisedButton(
-                color: const Color(0xff2821b5),
-                textColor: Colors.white,
-                padding: EdgeInsets.fromLTRB(30, 20, 30, 20),
-                onPressed: () {},
-                shape: new RoundedRectangleBorder(
-                    borderRadius: new BorderRadius.circular(1)),
-                child: Container(
+              SizedBox(
+                width: 150,
+                child: RaisedButton(
                   color: const Color(0xff2821b5),
-                  child: Text(
-                    'Contributor',
-                    style: TextStyle(
-                      fontSize: 15,
-                      fontWeight: FontWeight.w500,
+                  textColor: Colors.white,
+                  padding: EdgeInsets.fromLTRB(30, 20, 30, 20),
+                  onPressed: () {},
+                  shape: new RoundedRectangleBorder(
+                      borderRadius: new BorderRadius.circular(1)),
+                  child: Container(
+                    color: const Color(0xff2821b5),
+                    child: Text(
+                      'Contributor',
+                      style: TextStyle(
+                        fontSize: 15,
+                        fontWeight: FontWeight.w500,
+                      ),
                     ),
                   ),
                 ),
@@ -48,20 +51,23 @@ class DesktopJoin extends StatelessWidget {
               SizedBox(
                 width: 50,
               ),
-              RaisedButton(
-                color: const Color(0xff2821b5),
-                textColor: Colors.white,
-                padding: EdgeInsets.fromLTRB(30, 20, 30, 20),
-                onPressed: () {},
-                shape: new RoundedRectangleBorder(
-                    borderRadius: new BorderRadius.circular(1)),
-                child: Container(
+              SizedBox(
+                width: 150,
+                child: RaisedButton(
                   color: const Color(0xff2821b5),
-                  child: Text(
-                    'Intern',
-                    style: TextStyle(
-                      fontSize: 15,
-                      fontWeight: FontWeight.w500,
+                  textColor: Colors.white,
+                  padding: EdgeInsets.fromLTRB(30, 20, 30, 20),
+                  onPressed: () {},
+                  shape: new RoundedRectangleBorder(
+                      borderRadius: new BorderRadius.circular(1)),
+                  child: Container(
+                    color: const Color(0xff2821b5),
+                    child: Text(
+                      'Intern',
+                      style: TextStyle(
+                        fontSize: 15,
+                        fontWeight: FontWeight.w500,
+                      ),
                     ),
                   ),
                 ),
@@ -71,9 +77,10 @@ class DesktopJoin extends StatelessWidget {
           SizedBox(
             height: 50,
           ),
-          Divider(),
+
           Text('Contributor Program',
               style: TextStyle(fontWeight: FontWeight.w600, fontSize: 30)),
+          Divider(),
           SizedBox(
             height: 25,
           ),
@@ -173,18 +180,15 @@ class DesktopJoin extends StatelessWidget {
             ),
           ]),
           SizedBox(
-            height: 25,
+            height: 50,
           ),
-          Divider(),
-          SizedBox(
-            height: 25,
-          ),
-//
+
 //
 //
 
           Text('Internship',
               style: TextStyle(fontWeight: FontWeight.w600, fontSize: 30)),
+          Divider(),
           SizedBox(
             height: 25,
           ),
@@ -289,6 +293,13 @@ class DesktopJoin extends StatelessWidget {
                 ),
               ),
             ],
+          ),
+          SizedBox(
+            height: 50,
+          ),
+          Container(
+            height: MediaQuery.of(context).size.height / 3,
+            color: Color(0xFF2e2e2f),
           )
         ])),
         Topbar()

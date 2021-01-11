@@ -19,8 +19,6 @@ class DesktopHomePage extends StatelessWidget {
                     height: MediaQuery.of(context).size.height,
                     decoration: BoxDecoration(
                         image: DecorationImage(
-                            // colorFilter: new ColorFilter.mode(
-                            // Colors.black.withOpacity(0.3), BlendMode.dstATop),
                             image: AssetImage(
                               'asset/bg3.jpg',
                             ),
