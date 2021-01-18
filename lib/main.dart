@@ -1,6 +1,9 @@
 import 'package:devsera/Homepage/HomePage.dart';
+import 'package:devsera/Homepage/Homepage.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+
+import 'Manan Design/DesktopHomePage.dart';
 
 void main() {
   runApp(MyApp());
@@ -18,6 +21,6 @@ class MyApp extends StatelessWidget {
           ),
           primarySwatch: Colors.blue,
         ),
-        home: HomePage());
+        home: Homepage());
   }
 }
